@@ -1,0 +1,48 @@
+Printf()
+#include <stdio.h>
+
+int main (){
+    //this is one line comment
+    /*this is multi line
+    comment here this is an example */
+
+    //this is for new line
+    printf("Hello World!\nokay");
+
+    //this is for tab
+    printf("Hello World!\tokay");
+    //this is for "
+    printf("Hello World!\"tokay");
+    return 0;
+}
+
+Prob 01:
+#include <stdio.h>
+
+int main (){
+    printf("Hello world!");
+    return 0;
+}
+
+02:
+#include <stdio.h>
+
+int main (){
+    printf("Name : Sharoare Hosan Emon\n");
+    printf("Address\n");
+    printf("Phn\n");
+    return 0;
+}
+
+03:
+ #include <stdio.h>
+
+int main (){
+    float a,b;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    float sumi=a+b;
+    printf("Your Sum is = %f",sumi);
+    return 0;
+}
+

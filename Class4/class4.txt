@@ -1,0 +1,170 @@
+Problem 1:
+#include <stdio.h >
+
+int main (){
+  int num1;
+  int num2;
+  scanf("%d %d",&num1,&num2);
+  if(num1==num2){
+    printf("Number 1 & Number 2 are equal");
+  }
+  else {
+    printf("Number 1 & Number 2 are not equal");
+  }
+  return 0;
+}
+
+Problem 2: 
+#include <stdio.h >
+
+int main (){
+  int num;
+  scanf("%d",&num);
+  if((num%2)==0){
+    printf("Number Even");
+  }
+  else {
+    printf("Number Odd");
+  }
+  return 0;
+}
+Problem 3:
+#include <stdio.h >
+
+int main (){
+  int year;
+  scanf("%d",&year);
+  if(year%400==0){
+    printf("Leap year");
+  }
+  else if((year%100!=0)&&(year%4==0)){
+    printf("Leap year");
+  }
+  else{
+    printf("Not Leap year");
+  }
+  return 0;
+}
+Problem 5 :
+#include <stdio.h >
+
+int main (){
+  int num1,num2,num3;
+  scanf("%d %d %d",&num1,&num2,&num3);
+  if((num1>num2)&&(num1>num3)){
+       printf("Greatest number is = %d",num1);
+  }
+  else if(num2>num3){
+       printf("Greatest number is = %d",num2);
+  }
+  else{
+       printf("Greatest number is = %d",num3);
+  }
+  return 0;
+}
+Problem 6:
+#include <stdio.h >
+
+int main (){
+  int a,b,c;
+  scanf("%d %d %d",&a,&b,&c);
+  if((a==0)&&(b==0)&&(c==0)){
+    printf("No Equation Possible");
+  }
+  return 0;
+}
+Problem 7:
+#include <stdio.h >
+
+int main (){
+  int phy,mat,che;
+  scanf("%d %d %d",&phy,&mat,&che);
+  if((phy>=55)&&(mat>=65)&&(che>=50)&&(phy+mat+che)>=190){
+    printf("Eligible");
+  }
+  else if((phy+mat)>=140){
+    printf("Eligible");
+  }
+  else {
+    printf("not Eligible");
+  }
+  return 0;
+}
+Problem 8:
+#include <stdio.h >
+#include <math.h >
+
+int main (){
+  float a,b,c;
+  scanf("%f %f %f",&a,&b,&c);
+  float det=b*b- 4*a*c;
+  if(det==0){
+    printf("Roots are equal\n");
+    printf("x1=%f\n",-b/(2*a));
+    printf("x2=%f\n",-b/(2*a));
+  }
+  else if(det>0){
+    printf("Roots are real but not equal\n");
+    float x1=(-b+sqrt(det))/(2*a);
+    float x2=(-b-sqrt(det))/(2*a);
+    printf("x1=%f\n",x1);
+    printf("x2=%f\n",x2);
+  }
+  else {
+    printf("Roots are img\n");
+  }
+  return 0;
+}
+Problem 11:
+#include <stdio.h >
+#include <math.h >
+
+int main (){
+  float a,b,c;
+  scanf("%f %f %f",&a,&b,&c);
+  if((a==b)&&(b==c)){
+    printf("Equilateral\n");
+  }
+  else if((a==b)||(b==c)||(a==c)){
+    printf("Isosceles\n");
+  }
+  else {
+    printf("Scalene\n");
+  }
+  return 0;
+}
+Problem 12 :
+#include <stdio.h >
+#include <math.h >
+
+int main (){
+  float used_unit,total_bill;
+  scanf("%f",&used_unit);
+  float unit_price;
+  if(used_unit<200){
+        unit_price=1.2;
+  }
+  else if(used_unit<400){
+     unit_price=1.5;
+  }
+  else if(used_unit<600){
+     unit_price=1.8;
+  }
+  else {
+    unit_price=2;
+  }
+  total_bill=unit_price*used_unit;
+  float charge;
+  if(total_bill>=400){
+    charge=total_bill*0.15;
+  }
+  total_bill+=charge;
+  if(total_bill<100){
+    total_bill=100;
+  }
+  printf("Total Use : %f\n",used_unit);
+  printf("unit Charge : %f\n",unit_price);
+  printf("SubCharge : %f\n",charge);
+  printf("Total Bill : %f\n",total_bill);
+  return 0;
+}

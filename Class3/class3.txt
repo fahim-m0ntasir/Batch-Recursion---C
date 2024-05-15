@@ -1,0 +1,78 @@
+#include <stdio.h>
+
+int main (){
+  //problem 5
+  float height,width;
+  printf("Please enter your height=");
+  scanf("%f",&height);
+  printf("Please enter your width=");
+  scanf("%f",&width);
+  float area=height*width;
+  float per=2*(height+width);
+  printf("Your area is = %.3f\n",area);
+  printf("Your area is = %.3f",per);
+  return 0;
+}
+Problem 7:
+#include <stdio.h>
+
+int main (){
+  //problem 7
+  int ab=22;
+  int a=7;
+  float b=(float)ab/a;
+  printf("%f",b);
+  return 0;
+}
+
+Problem 6:
+#include <stdio.h>
+
+int main (){
+  //problem 9
+  int total_days;
+  printf("Please input your total days=");
+  scanf("%d",&total_days);
+  int years,months,days;
+  years = total_days/365;
+  total_days=total_days%365;
+  months=total_days/30;
+  days=total_days%30;
+
+  printf("Your total years= %d\n",years);
+  printf("Your total months= %d\n",months);
+  printf("Your total days= %d",days);
+  return 0;
+}
+Problem 13: 
+#include <stdio.h>
+
+int main (){
+  //problem 13
+  int n;
+  scanf("%d",&n);
+  int degit1=n/10;
+  int degit2=n%10;
+  printf("Your multiplication = %d",degit1*degit2);
+  return 0;
+}
+Brain teaser :
+#include <stdio.h>
+
+int main (){
+  //problem 13
+  int n;
+  scanf("%d",&n);
+  //2322
+  int degit1=n/1000;
+  n=n%1000;
+  int degit2=n/100;
+  n=n%100;
+  int degit3=n/10;
+  int degit4=n%10;
+  printf("%d\n",degit1);
+  printf("%d\n",degit2);
+  printf("%d\n",degit3);
+  printf("%d\n",degit4);
+  return 0;
+}
