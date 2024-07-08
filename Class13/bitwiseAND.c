@@ -13,6 +13,7 @@ int main()
     // 9    =   0 0 0 0 1 0 0 1
     // 7&9  =   0 0 0 0 0 0 0 1 = 1
     // 6    =   0 0 0 0 0 1 1 0
+    // 9    =   0 0 0 0 1 0 0 1
     // 6&9  =   0 0 0 0 0 0 0 0 = 0
     int a, b;
     // printf("Enter two numbers: ");
@@ -21,6 +22,7 @@ int main()
     // any odd & 1 = 1
     // any even &1 = 0
     // we can check if a number is even or odd using this property
+    // also we get the last bit of the num if we do num & 1 
     int num;
     scanf("%d", &num);
     if (num&1)
